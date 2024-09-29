@@ -12,6 +12,3 @@ function greeting()
     line("Hello, %s!", $name);
     return $name;
 }
-function askQuestion(string $question){
-
-}
