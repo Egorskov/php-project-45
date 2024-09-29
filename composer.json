@@ -20,5 +20,12 @@
 	
 	"description": "project 45",
   
-	"license": "MIT"
+	"license": "MIT",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.10"
+    },
+     "scripts": {
+       "phpcs": "phpcs",
+       "phpcbf": "phpcbf"
+  }
 }
