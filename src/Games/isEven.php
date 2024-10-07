@@ -2,10 +2,6 @@
 
 namespace BrainGames\Cli;
 
-//use function cli\line;
-//use function cli\prompt;
-//use function BrainGames\Cli\communication;
-
 function isEven()
 {
     $game = 'Answer "yes" if the number is even, otherwise answer "no".';
