@@ -7,3 +7,8 @@
 [![asciicast](https://asciinema.org/a/8k6WwEsOqou0uqyBLoXjvbryy.svg)](https://asciinema.org/a/8k6WwEsOqou0uqyBLoXjvbryy)
 
 #### Link https://asciinema.org/a/8k6WwEsOqou0uqyBLoXjvbryy
+
+### Game brain-calc
+[![asciicast](https://asciinema.org/a/NBmevPIeofSxjq5TrntDEXMcl.svg)](https://asciinema.org/a/NBmevPIeofSxjq5TrntDEXMcl)
+
+#### Link https://asciinema.org/a/NBmevPIeofSxjq5TrntDEXMcl
