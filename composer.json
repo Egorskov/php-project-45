@@ -6,7 +6,7 @@
             "src/Engine.php",
             "src/Games/isEven.php",
             "src/Games/Calc.php",
-            "src/Games/GSD.php"
+            "src/Games/GCD.php"
 
         ]
     },
@@ -24,7 +24,7 @@
 		"bin/brain-games",
         "bin/brain-even",
         "bin/brain-calc",
-        "bin/brain-gsd"
+        "bin/brain-gcd"
 	],
 	
 	"description": "project 45",

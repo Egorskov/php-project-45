@@ -2,7 +2,7 @@
 
 namespace BrainGames\Cli;
 
-function gsd()
+function gcd()
 {
     $game = 'Find the greatest common divisor of given numbers.';
     $answers = [];

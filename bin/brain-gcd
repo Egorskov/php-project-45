@@ -4,6 +4,6 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function BrainGames\Cli\gsd;
+use function BrainGames\Cli\gcd;
 
-gsd();
+gcd();

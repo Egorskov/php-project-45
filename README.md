@@ -4,11 +4,16 @@
 
 
 ### Game brain-even
-[![asciicast](https://asciinema.org/a/8k6WwEsOqou0uqyBLoXjvbryy.svg)](https://asciinema.org/a/8k6WwEsOqou0uqyBLoXjvbryy)
+[![asciicast](https://asciinema.org/a/6upssNMll9hN4n8BocglS7LGM.svg)](https://asciinema.org/a/6upssNMll9hN4n8BocglS7LGM)
 
-#### Link https://asciinema.org/a/8k6WwEsOqou0uqyBLoXjvbryy
+#### Link https://asciinema.org/a/6upssNMll9hN4n8BocglS7LGM
 
 ### Game brain-calc
-[![asciicast](https://asciinema.org/a/NBmevPIeofSxjq5TrntDEXMcl.svg)](https://asciinema.org/a/NBmevPIeofSxjq5TrntDEXMcl)
+[![asciicast](https://asciinema.org/a/Hi6VXSA0FfkIh0TTJDFoU7SX4.svg)](https://asciinema.org/a/Hi6VXSA0FfkIh0TTJDFoU7SX4)
 
-#### Link https://asciinema.org/a/NBmevPIeofSxjq5TrntDEXMcl
+#### Link https://asciinema.org/a/Hi6VXSA0FfkIh0TTJDFoU7SX4
+
+### Game brain-gsd
+[![asciicast](https://asciinema.org/a/T9BRb8tOFPhKSkSJLQHGfMTDQ.svg)](https://asciinema.org/a/T9BRb8tOFPhKSkSJLQHGfMTDQ)
+
+#### Link https://asciinema.org/a/T9BRb8tOFPhKSkSJLQHGfMTDQ
