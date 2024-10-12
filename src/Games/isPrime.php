@@ -12,7 +12,7 @@ function isPrime()
     $answers = [];
     foreach ($numbers as $number) {
         $primeStatus = gmp_prob_prime($number);
-        if ($primeStatus === 2 ) {
+        if ($primeStatus === 2) {
             $answers[$number] = 'yes';
         } else {
             $answers[$number] = 'no';

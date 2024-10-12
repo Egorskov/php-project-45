@@ -22,3 +22,8 @@
 [![asciicast](https://asciinema.org/a/dKSwtOGqiHeefpGCx85VJgv3J.svg)](https://asciinema.org/a/dKSwtOGqiHeefpGCx85VJgv3J)
 
 #### Link https://asciinema.org/a/dKSwtOGqiHeefpGCx85VJgv3J
+
+### Game brain-prime
+[![asciicast](https://asciinema.org/a/xs1oOdZJ39NsBAztqKy9VicRe.svg)](https://asciinema.org/a/xs1oOdZJ39NsBAztqKy9VicRe)
+
+#### Link https://asciinema.org/a/xs1oOdZJ39NsBAztqKy9VicRe
