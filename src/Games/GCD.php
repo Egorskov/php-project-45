@@ -13,4 +13,3 @@ function gcd()
     }
     communication($answers, $game);
 }
-

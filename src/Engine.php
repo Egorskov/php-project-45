@@ -8,7 +8,7 @@ use function cli\prompt;
 function communication(array $answers, $game)
 {
     $name = greeting();
-    line ("$game");
+    line("$game");
     foreach ($answers as $key => $value) {
         $answer = prompt("Question: $key\nYou answer");
         if ($answer != $value) {

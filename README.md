@@ -17,3 +17,8 @@
 [![asciicast](https://asciinema.org/a/T9BRb8tOFPhKSkSJLQHGfMTDQ.svg)](https://asciinema.org/a/T9BRb8tOFPhKSkSJLQHGfMTDQ)
 
 #### Link https://asciinema.org/a/T9BRb8tOFPhKSkSJLQHGfMTDQ
+
+### Game brain-progression
+[![asciicast](https://asciinema.org/a/dKSwtOGqiHeefpGCx85VJgv3J.svg)](https://asciinema.org/a/dKSwtOGqiHeefpGCx85VJgv3J)
+
+#### Link https://asciinema.org/a/dKSwtOGqiHeefpGCx85VJgv3J
