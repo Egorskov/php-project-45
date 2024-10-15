@@ -1,28 +1,37 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace BrainGames\Games\Calc;
 
-function calc()
+use function BrainGames\Engine\communication;
+
+use const BrainGames\Engine\ROUND;
+use const BrainGames\Engine\MIN_NUM;
+use const BrainGames\Engine\MAX_NUM;
+
+function calc(): void
 {
     $game = 'What is the result of the expression?';
     $answers = [];
     $signs = ['+', '-', '*'];
-    for ($i = 0; $i < 3; $i++) {
-        $first = mt_rand(1, 10);
-        $second = mt_rand(1, 10);
+    for ($i = 0; $i < ROUND; $i++) {
+        $first = mt_rand(MIN_NUM, MAX_NUM);
+        $second = mt_rand(MIN_NUM, MAX_NUM);
         $operator = $signs[array_rand($signs)];
         $answers["$first $operator $second"] = calculate($first, $second, $operator);
     }
     communication($answers, $game);
 }
-function calculate($first, $second, $operator)
+function calculate($num1, $num2, $operation)
 {
-    switch ($operator) {
+    switch ($operation) {
         case '+':
-            return $first + $second;
+            return $num1 + $num2;
+            break;
         case '-':
-            return $first - $second;
+            return $num1 - $num2;
+            break;
         case '*':
-            return $first * $second;
+            return $num1 * $num2;
+            break;
     }
 }

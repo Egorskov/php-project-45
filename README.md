@@ -7,7 +7,7 @@
 
 ### Install | | Установка
 ```
-% git clone https://github.com/Egorskov/php-project-45.git
+% git clone git@github.com:Egorskov/php-project-45.git
 
 % cd php-project-45
 
