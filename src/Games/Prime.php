@@ -21,7 +21,7 @@ function prime(): void
 
 function isPrime($num): bool
 {
-    if ($num <= 2){
+    if ($num <= 1){
         return false;
     } else {
         for ($i = 2; $i < $num; $i++) {
