@@ -3,7 +3,6 @@
 namespace BrainGames\Engine;
 
 use function BrainGames\Cli\greeting;
-
 use function cli\line;
 use function cli\prompt;
 

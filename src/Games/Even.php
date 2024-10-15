@@ -3,7 +3,6 @@
 namespace BrainGames\Games\Even;
 
 use function BrainGames\Engine\communication;
-
 use function BrainGames\Engine\arrayNumbers;
 
 function even(): void
@@ -20,7 +19,7 @@ function even(): void
     communication($answers, $game);
 }
 
-function isEven ($num) : bool
+function isEven($num): bool
 {
     return $num % 2 === 0;
 }
