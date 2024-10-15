@@ -29,7 +29,7 @@ function slicer(): array
         for ($j = MIN_NUM; $j < MAX_NUM; $j++) {
             $num[$j] = $num[$j - 1] + $stepper;
         }
-        $start = mt_rand(MIN_NUM, MAX_NUM);
+        $start = mt_rand(MIN_NUM, (MAX_NUM - 10));
         $lens = mt_rand(5, 10);
         return array_slice($num, $start, $lens);
 }
