@@ -21,17 +21,14 @@ function calc(): void
     }
     communication($answers, $game);
 }
-function calculate($num1, $num2, $operation)
+function calculate(int $num1, int $num2, string $operation)
 {
     switch ($operation) {
         case '+':
             return $num1 + $num2;
-            break;
         case '-':
             return $num1 - $num2;
-            break;
         case '*':
             return $num1 * $num2;
-            break;
     }
 }

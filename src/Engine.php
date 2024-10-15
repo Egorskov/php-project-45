@@ -10,7 +10,7 @@ const ROUND = 3;
 const MIN_NUM = 1;
 const MAX_NUM = 100;
 
-function communication(array $answers, $game): void
+function communication(array $answers, string $game): void
 {
     $name = greeting();
     line("$game");

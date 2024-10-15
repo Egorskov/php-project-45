@@ -20,7 +20,7 @@ function gcd(): void
     communication($answers, $game);
 }
 
-function nod($x, $y)
+function nod(int $x, int $y)
 {
     while ($x != 0 && $y != 0) {
         if ($x >= $y) {

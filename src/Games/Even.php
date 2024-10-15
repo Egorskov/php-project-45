@@ -19,7 +19,7 @@ function even(): void
     communication($answers, $game);
 }
 
-function isEven($num): bool
+function isEven(int $num): bool
 {
     return $num % 2 === 0;
 }
