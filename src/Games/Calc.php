@@ -2,8 +2,6 @@
 
 namespace BrainGames\Games\Calc;
 
-use Error;
-use mysql_xdevapi\Exception;
 use function BrainGames\Engine\communication;
 
 use const BrainGames\Engine\ROUND;
