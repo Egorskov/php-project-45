@@ -15,7 +15,7 @@ function runCalc(): void
     $game = 'What is the result of the expression?';
     $answers = [];
     $signs = ['+', '-', '*'];
-    for ($i = 0; $i < ROUND; $i++) {
+    for ($i = 1; $i <= ROUND; $i++) {
         $first = mt_rand(MIN_NUM, MAX_NUM);
         $second = mt_rand(MIN_NUM, MAX_NUM);
         $operator = $signs[array_rand($signs)];
