@@ -22,7 +22,7 @@ function gcd(): void
 
 function nod(int $x, int $y)
 {
-    while ($x != 0 && $y != 0) {
+    while ($x !== 0 && $y !== 0) {
         if ($x >= $y) {
             $x = $x % $y;
         } else {
