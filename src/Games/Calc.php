@@ -2,6 +2,8 @@
 
 namespace BrainGames\Games\Calc;
 
+use Error;
+use mysql_xdevapi\Exception;
 use function BrainGames\Engine\communication;
 
 use const BrainGames\Engine\ROUND;
@@ -21,14 +23,19 @@ function calc(): void
     }
     communication($answers, $game);
 }
-function calculate(int $num1, int $num2, string $operation)
+function calculate(int $num1, int $num2, string $operation): int
 {
+    $result = 0;
     switch ($operation) {
         case '+':
-            return $num1 + $num2;
+            $result = $num1 + $num2;
+            break;
         case '-':
-            return $num1 - $num2;
+            $result = $num1 - $num2;
+            break;
         case '*':
-            return $num1 * $num2;
+            $result = $num1 * $num2;
+            break;
     }
+    return $result;
 }
