@@ -5,7 +5,7 @@ namespace BrainGames\Games\Even;
 use function BrainGames\Engine\communication;
 use function BrainGames\Engine\arrayNumbers;
 
-function even(): void
+function runEven(): void
 {
     $game = 'Answer "yes" if the number is even, otherwise answer "no".';
     $answers = [];

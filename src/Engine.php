@@ -29,7 +29,7 @@ function communication(array $answers, string $game): void
 function arrayNumbers(): array
 {
     $numbers = [];
-    for ($i = 0; $i < ROUND; $i++) {
+    for ($i = 1; $i <= ROUND; $i++) {
         $numbers[$i] = mt_rand(MIN_NUM, MAX_NUM);
     }
     return $numbers;

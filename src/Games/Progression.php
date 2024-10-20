@@ -8,11 +8,11 @@ use const BrainGames\Engine\ROUND;
 use const BrainGames\Engine\MIN_NUM;
 use const BrainGames\Engine\MAX_NUM;
 
-function progression(): void
+function runProgression(): void
 {
     $game = 'What number is missing in the progression?';
     $answers = [];
-    for ($i = 0; $i < ROUND; $i++) {
+    for ($i = 1; $i <= ROUND; $i++) {
         $numbers = slicer();
         $randomSym = mt_rand(0, (count($numbers) - 1));
         $correctAnswer = $numbers[$randomSym];

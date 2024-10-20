@@ -10,7 +10,7 @@ use const BrainGames\Engine\ROUND;
 use const BrainGames\Engine\MIN_NUM;
 use const BrainGames\Engine\MAX_NUM;
 
-function calc(): void
+function runCalc(): void
 {
     $game = 'What is the result of the expression?';
     $answers = [];
