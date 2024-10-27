@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Calc;
 
-use function BrainGames\Engine\communication;
+use function BrainGames\Engine\communicate;
 
 use const BrainGames\Engine\ROUND;
 use const BrainGames\Engine\MIN_NUM;
@@ -19,21 +19,18 @@ function runCalc(): void
         $operator = $signs[array_rand($signs)];
         $answers["$first $operator $second"] = calculate($first, $second, $operator);
     }
-    communication($answers, $game);
+    communicate($answers, $game);
 }
-function calculate(int $num1, int $num2, string $operation): int
+function calculate($first, $second, $operator): string
 {
-    $result = 0;
-    switch ($operation) {
+    switch ($operator) {
         case '+':
-            $result = $num1 + $num2;
-            break;
+            return $first + $second;
         case '-':
-            $result = $num1 - $num2;
-            break;
+            return $first - $second;
         case '*':
-            $result = $num1 * $num2;
-            break;
+            return $first * $second;
+            default:
+                break;
     }
-    return $result;
 }

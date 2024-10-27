@@ -2,21 +2,21 @@
 
 namespace BrainGames\Games\Prime;
 
-use function BrainGames\Engine\arrayNumbers;
-use function BrainGames\Engine\communication;
+use function BrainGames\Engine\getArrayNumbers;
+use function BrainGames\Engine\communicate;
 
 function runPrime(): void
 {
     $game = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $answers = [];
-    foreach (arrayNumbers() as $number) {
+    foreach (getArrayNumbers() as $number) {
         if (isPrime($number)) {
             $answers[$number] = 'yes';
         } else {
             $answers[$number] = 'no';
         }
     }
-    communication($answers, $game);
+    communicate($answers, $game);
 }
 
 function isPrime(int $num): bool

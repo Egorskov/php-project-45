@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Progression;
 
-use function BrainGames\Engine\communication;
+use function BrainGames\Engine\communicate;
 
 use const BrainGames\Engine\ROUND;
 use const BrainGames\Engine\MIN_NUM;
@@ -13,16 +13,16 @@ function runProgression(): void
     $game = 'What number is missing in the progression?';
     $answers = [];
     for ($i = 1; $i <= ROUND; $i++) {
-        $numbers = slicer();
+        $numbers = getSlice();
         $randomSym = mt_rand(0, (count($numbers) - 1));
         $correctAnswer = $numbers[$randomSym];
         $numbers[$randomSym] = '..';
         $numbersString = implode(' ', $numbers);
         $answers[$numbersString] = "$correctAnswer";
     }
-    communication($answers, $game);
+    communicate($answers, $game);
 }
-function slicer(): array
+function getSlice(): array
 {
     $num = [];
     $num[] = 0;

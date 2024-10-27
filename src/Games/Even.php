@@ -2,21 +2,21 @@
 
 namespace BrainGames\Games\Even;
 
-use function BrainGames\Engine\communication;
-use function BrainGames\Engine\arrayNumbers;
+use function BrainGames\Engine\communicate;
+use function BrainGames\Engine\getArrayNumbers;
 
 function runEven()
 {
     $game = 'Answer "yes" if the number is even, otherwise answer "no".';
     $answers = [];
-    foreach (arrayNumbers() as $number) {
+    foreach (getArrayNumbers() as $number) {
         if (isEven($number)) {
             $answers[$number] = 'yes';
         } else {
             $answers[$number] = 'no';
         }
     }
-    communication($answers, $game);
+    communicate($answers, $game);
 }
 
 function isEven(int $num): bool

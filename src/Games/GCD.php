@@ -1,8 +1,8 @@
 <?php
 
-namespace BrainGames\Games\GCD;
+namespace BrainGames\Games\Gcd;
 
-use function BrainGames\Engine\communication;
+use function BrainGames\Engine\communicate;
 
 use const BrainGames\Engine\ROUND;
 use const BrainGames\Engine\MIN_NUM;
@@ -15,12 +15,12 @@ function runGcd(): void
     for ($i = 1; $i <= ROUND; $i++) {
         $first = mt_rand(MIN_NUM, MAX_NUM);
         $second = mt_rand(MIN_NUM, MAX_NUM);
-        $answers["$first $second"] = nod($first, $second);
+        $answers["$first $second"] = getNod($first, $second);
     }
-    communication($answers, $game);
+    communicate($answers, $game);
 }
 
-function nod(int $x, int $y)
+function getNod(int $x, int $y): string
 {
     while ($x !== 0 && $y !== 0) {
         if ($x >= $y) {
