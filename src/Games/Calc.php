@@ -17,19 +17,19 @@ function runCalc(): void
         $first = mt_rand(MIN_NUM, MAX_NUM);
         $second = mt_rand(MIN_NUM, MAX_NUM);
         $operator = $signs[array_rand($signs)];
-        $answers["$first $operator $second"] = calculate($first, $second, $operator);
+        $answers["$first $operator $second"] = (string) calculate($first, $second, $operator);
     }
     communicate($answers, $game);
 }
-function calculate(int $first, int $second, string $operator): string
+function calculate(int $first, int $second, string $operator)
 {
     switch ($operator) {
         case '+':
-            return (string) ($first + $second);
+            return $first + $second;
         case '-':
-            return (string) ($first - $second);
+            return $first - $second;
         case '*':
-            return (string) ($first * $second);
+            return $first * $second;
         default:
             break;
     }
