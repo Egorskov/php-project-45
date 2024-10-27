@@ -30,7 +30,7 @@ function calculate($first, $second, $operator): string
             return $first - $second;
         case '*':
             return $first * $second;
-            default:
-                break;
+        default:
+            break;
     }
 }
