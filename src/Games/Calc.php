@@ -21,15 +21,15 @@ function runCalc(): void
     }
     communicate($answers, $game);
 }
-function calculate($first, $second, $operator): string
+function calculate(int $first, int $second, string $operator): string
 {
     switch ($operator) {
         case '+':
-            return $first + $second;
+            return (string) ($first + $second);
         case '-':
-            return $first - $second;
+            return (string) ($first - $second);
         case '*':
-            return $first * $second;
+            return (string) ($first * $second);
         default:
             break;
     }
