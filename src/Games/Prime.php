@@ -11,9 +11,9 @@ function runPrime(): void
     $answers = [];
     foreach (getArrayNumbers() as $number) {
         if (isPrime($number)) {
-            $answers[$number] = 'yes';
+            $answers[] = [$number, 'yes'];
         } else {
-            $answers[$number] = 'no';
+            $answers[] = [$number, 'no'];
         }
     }
     communicate($answers, $game);

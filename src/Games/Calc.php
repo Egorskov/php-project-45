@@ -17,7 +17,7 @@ function runCalc(): void
         $first = mt_rand(MIN_NUM, MAX_NUM);
         $second = mt_rand(MIN_NUM, MAX_NUM);
         $operator = $signs[array_rand($signs)];
-        $answers["$first $operator $second"] = (string) calculate($first, $second, $operator);
+        $answers[] = ["$first $operator $second", (string) calculate($first, $second, $operator)];
     }
     communicate($answers, $game);
 }

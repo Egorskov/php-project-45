@@ -18,7 +18,7 @@ function runProgression(): void
         $correctAnswer = $numbers[$randomSym];
         $numbers[$randomSym] = '..';
         $numbersString = implode(' ', $numbers);
-        $answers[$numbersString] = "$correctAnswer";
+        $answers[] = [$numbersString, "$correctAnswer"];
     }
     communicate($answers, $game);
 }

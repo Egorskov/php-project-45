@@ -14,10 +14,11 @@ function communicate(array $answers, string $game): void
 {
     $name = greeting();
     line("$game");
-    foreach ($answers as $key => $value) {
-        $answer = prompt("Question: $key\nYou answer");
-        if ($answer !== $value) {
-            line("'$answer' is wrong answer ;( Correct answer: '$value') \nLet's try again, $name!");
+    foreach ($answers as $key) {
+        [$question, $correctAnswer] = $key;
+        $answer = prompt("Question: $question\nYou answer");
+        if ($answer !== $correctAnswer) {
+            line("'$answer' is wrong answer ;( Correct answer: '$correctAnswer') \nLet's try again, $name!");
             return;
         } else {
             line("Correct!");

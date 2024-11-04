@@ -15,7 +15,7 @@ function runGcd(): void
     for ($i = 1; $i <= ROUND; $i++) {
         $first = mt_rand(MIN_NUM, MAX_NUM);
         $second = mt_rand(MIN_NUM, MAX_NUM);
-        $answers["$first $second"] = getNod($first, $second);
+        $answers[] = ["$first $second", getNod($first, $second)];
     }
     communicate($answers, $game);
 }

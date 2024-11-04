@@ -11,9 +11,9 @@ function runEven()
     $answers = [];
     foreach (getArrayNumbers() as $number) {
         if (isEven($number)) {
-            $answers[$number] = 'yes';
+            $answers[] = [$number,'yes'];
         } else {
-            $answers[$number] = 'no';
+            $answers[] = [$number,'no'];
         }
     }
     communicate($answers, $game);
